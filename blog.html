@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .group:hover .group-hover\:scale-110 {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto px-4 py-8">
+        <div class="relative">
+            <div id="carousel" class="overflow-hidden">
+                <div id="slider" class="flex transition-transform duration-300 ease-in-out">
+                    <div class="w-1/4 flex-shrink-0 px-2">
+                        <a href="#blog1" class="block relative h-64 rounded-lg overflow-hidden group">
+                            <img src="images/newsroom/1.png" alt="Blog 1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4">
+                                <span class="text-white text-xs">Jan 1, 2024</span>
+                                <h3 class="text-white text-lg font-bold mt-1">Blog Post Title 1</h3>
+                                <p class="text-gray-300 text-sm mt-1">Short description of the blog post goes here.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="w-1/4 flex-shrink-0 px-2">
+                        <a href="#blog2" class="block relative h-64 rounded-lg overflow-hidden group">
+                            <img src="images/newsroom/2.png" alt="Blog 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4">
+                                <span class="text-white text-xs">Feb 15, 2024</span>
+                                <h3 class="text-white text-lg font-bold mt-1">Blog Post Title 2</h3>
+                                <p class="text-gray-300 text-sm mt-1">Another short description for the second blog post.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="w-1/4 flex-shrink-0 px-2">
+                        <a href="#blog3" class="block relative h-64 rounded-lg overflow-hidden group">
+                            <img src="images/newsroom/3.png" alt="Blog 3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4">
+                                <span class="text-white text-xs">Mar 30, 2024</span>
+                                <h3 class="text-white text-lg font-bold mt-1">Blog Post Title 3</h3>
+                                <p class="text-gray-300 text-sm mt-1">Yet another short description for the third blog post.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="w-1/4 flex-shrink-0 px-2">
+                        <a href="#blog4" class="block relative h-64 rounded-lg overflow-hidden group">
+                            <img src="images/newsroom/4.png" alt="Blog 4" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4">
+                                <span class="text-white text-xs">Apr 15, 2024</span>
+                                <h3 class="text-white text-lg font-bold mt-1">Blog Post Title 4</h3>
+                                <p class="text-gray-300 text-sm mt-1">A short description for the fourth blog post.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

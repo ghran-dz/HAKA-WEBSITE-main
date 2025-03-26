@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --carousel-small-scale: 0.8;
+            --carousel-big-scale: 1.3;
+            --carousel-transition-duration: 1s; /* Transition duration */
+            --carousel-stay-duration: 3000ms; /* Stay duration */
+        }
+
+        .carousel {
+            display: flex;
+            overflow-x: hidden;
+            overflow-y: auto; /* Make carousel scrollable vertically */
+            position: relative;
+            width: 100%;
+            height: 70%; /* Adjust the height as necessary */
+            margin-top: 80px;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform var(--carousel-transition-duration) ease-in-out;
+            width: calc(100% * 4); /* Adjust this to the number of items */
+        }
+
+        .carousel-item {
+            flex: none;
+            transition: transform var(--carousel-transition-duration) ease-in-out, opacity var(--carousel-transition-duration) ease-in-out, z-index 0s;
+            width: calc(100% / 2); /* Show max two items */
+            opacity: 0.4;
+            transform: scale(var(--carousel-small-scale)); /* Apply smaller scale for non-active items */
+            z-index: 1; /* Default z-index */
+        }
+
+        .carousel-item.active {
+            transform: scale(var(--carousel-big-scale)); /* Apply big scale */
+            opacity: 1;
+            z-index: 2; /* Highest z-index */
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: auto; /* Ensure images maintain aspect ratio */
+        }
+
+        .bg-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bg-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             
+        }
+
+        .arrow-button {
+            position: absolute;
+            bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .arrow-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .arrow-button.left {
+            right: 70px;
+        }
+
+        .arrow-button.right {
+            right: 20px;
+        }
+
+        .arrow {
+            font-size: 24px;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-800">
+     HELO 
+</body>
+</html>
