@@ -40,7 +40,8 @@
                         contain.classList.add('map-contain', 'absolute', `bottom-[${16}%]`, `left-[${25}%]`, `sm:bottom-[${20}%]`, `sm:left-[${25}%]`, `lg:bottom-[${21}%]`, `lg:left-[${25}%]`, `2xl:bottom-[${22}%]`, `2xl:left-[${25}%]`, 'flex', 'flex-col', 'items-center', 'cursor-pointer')
                     } else if (find.branch_name.toLowerCase().includes('cibubur')) {
                         contain.classList.add('map-contain', 'absolute', `bottom-[${14}%]`, `left-[${29}%]`, `sm:bottom-[${17}%]`, `sm:left-[${29.5}%]`, `lg:bottom-[${19}%]`, `lg:left-[${28}%]`, `2xl:bottom-[${20}%]`, `2xl:left-[${27}%]`, 'flex', 'flex-col', 'items-center', 'cursor-pointer')
-                    }
+                    } else if (find.branch_name.toLowerCase().includes('pejaten')) {
+                        contain.classList.add('map-contain', 'absolute', `bottom-[${13}%]`, `left-[${24}%]`, `sm:bottom-[${18}%]`, `sm:left-[${28}%]`, `lg:bottom-[${20}%]`, `lg:left-[${26}%]`, `2xl:bottom-[${21}%]`, `2xl:left-[${26}%]`, 'flex', 'flex-col', 'items-center', 'cursor-pointer')
 
                     contain.innerHTML = `<div class="relative"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-5 h-5 sm:w-10 sm:h-10 opacity-70">
                                             <path fill="red" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
